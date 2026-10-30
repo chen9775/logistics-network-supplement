@@ -1,0 +1,1477 @@
+{
+  "name": "全国示意物流地图（合成）",
+  "description": "24 个城市、9 个候选枢纽、双向干线走廊与 52 条 OD 需求；用于物流网络设计演示，非真实运营数据。",
+  "version": "1.0",
+  "construction_budget": 2500000,
+  "default_max_trips_per_day": 24,
+  "nodes": [
+    {
+      "id": "BJ",
+      "name": "北京",
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "type": "candidate_hub",
+      "fixed_cost": 900000,
+      "capacity_cost_coef": 6500
+    },
+    {
+      "id": "SH",
+      "name": "上海",
+      "lat": 31.2304,
+      "lon": 121.4737,
+      "type": "candidate_hub",
+      "fixed_cost": 850000,
+      "capacity_cost_coef": 6000
+    },
+    {
+      "id": "GZ",
+      "name": "广州",
+      "lat": 23.1291,
+      "lon": 113.2644,
+      "type": "candidate_hub",
+      "fixed_cost": 820000,
+      "capacity_cost_coef": 5600
+    },
+    {
+      "id": "CD",
+      "name": "成都",
+      "lat": 30.5728,
+      "lon": 104.0668,
+      "type": "candidate_hub",
+      "fixed_cost": 760000,
+      "capacity_cost_coef": 5200
+    },
+    {
+      "id": "WH",
+      "name": "武汉",
+      "lat": 30.5928,
+      "lon": 114.3055,
+      "type": "candidate_hub",
+      "fixed_cost": 780000,
+      "capacity_cost_coef": 5400
+    },
+    {
+      "id": "XA",
+      "name": "西安",
+      "lat": 34.3416,
+      "lon": 108.9398,
+      "type": "candidate_hub",
+      "fixed_cost": 700000,
+      "capacity_cost_coef": 5000
+    },
+    {
+      "id": "ZZ",
+      "name": "郑州",
+      "lat": 34.7466,
+      "lon": 113.6254,
+      "type": "candidate_hub",
+      "fixed_cost": 680000,
+      "capacity_cost_coef": 4800
+    },
+    {
+      "id": "SY",
+      "name": "沈阳",
+      "lat": 41.8057,
+      "lon": 123.4315,
+      "type": "candidate_hub",
+      "fixed_cost": 600000,
+      "capacity_cost_coef": 4300
+    },
+    {
+      "id": "UQ",
+      "name": "乌鲁木齐",
+      "lat": 43.8256,
+      "lon": 87.6168,
+      "type": "candidate_hub",
+      "fixed_cost": 550000,
+      "capacity_cost_coef": 3800
+    },
+    {
+      "id": "TJ",
+      "name": "天津",
+      "lat": 39.0842,
+      "lon": 117.2009,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "JN",
+      "name": "济南",
+      "lat": 36.6512,
+      "lon": 117.1201,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "QD",
+      "name": "青岛",
+      "lat": 36.0671,
+      "lon": 120.3826,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "NJ",
+      "name": "南京",
+      "lat": 32.0603,
+      "lon": 118.7969,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "HZ",
+      "name": "杭州",
+      "lat": 30.2741,
+      "lon": 120.1551,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "HF",
+      "name": "合肥",
+      "lat": 31.8206,
+      "lon": 117.2272,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "FZ",
+      "name": "福州",
+      "lat": 26.0745,
+      "lon": 119.2965,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "XM",
+      "name": "厦门",
+      "lat": 24.4798,
+      "lon": 118.0894,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "SZ",
+      "name": "深圳",
+      "lat": 22.5431,
+      "lon": 114.0579,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "CS",
+      "name": "长沙",
+      "lat": 28.2282,
+      "lon": 112.9388,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "NN",
+      "name": "南宁",
+      "lat": 22.817,
+      "lon": 108.3665,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "KM",
+      "name": "昆明",
+      "lat": 25.0389,
+      "lon": 102.7183,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "CQ",
+      "name": "重庆",
+      "lat": 29.563,
+      "lon": 106.5516,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "GY",
+      "name": "贵阳",
+      "lat": 26.647,
+      "lon": 106.6302,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    },
+    {
+      "id": "LZ",
+      "name": "兰州",
+      "lat": 36.0611,
+      "lon": 103.8343,
+      "type": "city",
+      "fixed_cost": 0,
+      "capacity_cost_coef": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "BJ-ZZ-rail",
+      "src": "BJ",
+      "dst": "ZZ",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "ZZ-BJ-rail",
+      "src": "ZZ",
+      "dst": "BJ",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "ZZ-WH-rail",
+      "src": "ZZ",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 535.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 260500.0,
+      "cost_per_trip": 19770.0
+    },
+    {
+      "id": "WH-ZZ-rail",
+      "src": "WH",
+      "dst": "ZZ",
+      "mode": "rail",
+      "distance_km": 535.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 260500.0,
+      "cost_per_trip": 19770.0
+    },
+    {
+      "id": "WH-GZ-rail",
+      "src": "WH",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 960.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 388000.0,
+      "cost_per_trip": 29120.0
+    },
+    {
+      "id": "GZ-WH-rail",
+      "src": "GZ",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 960.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 388000.0,
+      "cost_per_trip": 29120.0
+    },
+    {
+      "id": "WH-SH-rail",
+      "src": "WH",
+      "dst": "SH",
+      "mode": "rail",
+      "distance_km": 790.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 337000.0,
+      "cost_per_trip": 25380.0
+    },
+    {
+      "id": "SH-WH-rail",
+      "src": "SH",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 790.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 337000.0,
+      "cost_per_trip": 25380.0
+    },
+    {
+      "id": "ZZ-XA-rail",
+      "src": "ZZ",
+      "dst": "XA",
+      "mode": "rail",
+      "distance_km": 495.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 248500.0,
+      "cost_per_trip": 18890.0
+    },
+    {
+      "id": "XA-ZZ-rail",
+      "src": "XA",
+      "dst": "ZZ",
+      "mode": "rail",
+      "distance_km": 495.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 248500.0,
+      "cost_per_trip": 18890.0
+    },
+    {
+      "id": "XA-CD-rail",
+      "src": "XA",
+      "dst": "CD",
+      "mode": "rail",
+      "distance_km": 715.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 314500.0,
+      "cost_per_trip": 23730.0
+    },
+    {
+      "id": "CD-XA-rail",
+      "src": "CD",
+      "dst": "XA",
+      "mode": "rail",
+      "distance_km": 715.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 314500.0,
+      "cost_per_trip": 23730.0
+    },
+    {
+      "id": "CD-WH-rail",
+      "src": "CD",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 1125.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 437500.0,
+      "cost_per_trip": 32750.0
+    },
+    {
+      "id": "WH-CD-rail",
+      "src": "WH",
+      "dst": "CD",
+      "mode": "rail",
+      "distance_km": 1125.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 437500.0,
+      "cost_per_trip": 32750.0
+    },
+    {
+      "id": "BJ-SH-rail",
+      "src": "BJ",
+      "dst": "SH",
+      "mode": "rail",
+      "distance_km": 1225.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 467500.0,
+      "cost_per_trip": 34950.0
+    },
+    {
+      "id": "SH-BJ-rail",
+      "src": "SH",
+      "dst": "BJ",
+      "mode": "rail",
+      "distance_km": 1225.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 467500.0,
+      "cost_per_trip": 34950.0
+    },
+    {
+      "id": "BJ-GZ-rail",
+      "src": "BJ",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 2170.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 751000.0,
+      "cost_per_trip": 55740.0
+    },
+    {
+      "id": "GZ-BJ-rail",
+      "src": "GZ",
+      "dst": "BJ",
+      "mode": "rail",
+      "distance_km": 2170.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 751000.0,
+      "cost_per_trip": 55740.0
+    },
+    {
+      "id": "SH-GZ-rail",
+      "src": "SH",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 1395.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 518500.0,
+      "cost_per_trip": 38690.0
+    },
+    {
+      "id": "GZ-SH-rail",
+      "src": "GZ",
+      "dst": "SH",
+      "mode": "rail",
+      "distance_km": 1395.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 518500.0,
+      "cost_per_trip": 38690.0
+    },
+    {
+      "id": "BJ-SY-rail",
+      "src": "BJ",
+      "dst": "SY",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "SY-BJ-rail",
+      "src": "SY",
+      "dst": "BJ",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "XA-LZ-rail",
+      "src": "XA",
+      "dst": "LZ",
+      "mode": "rail",
+      "distance_km": 575.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 272500.0,
+      "cost_per_trip": 20650.0
+    },
+    {
+      "id": "LZ-XA-rail",
+      "src": "LZ",
+      "dst": "XA",
+      "mode": "rail",
+      "distance_km": 575.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 272500.0,
+      "cost_per_trip": 20650.0
+    },
+    {
+      "id": "LZ-UQ-rail",
+      "src": "LZ",
+      "dst": "UQ",
+      "mode": "rail",
+      "distance_km": 1870.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 661000.0,
+      "cost_per_trip": 49140.0
+    },
+    {
+      "id": "UQ-LZ-rail",
+      "src": "UQ",
+      "dst": "LZ",
+      "mode": "rail",
+      "distance_km": 1870.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 661000.0,
+      "cost_per_trip": 49140.0
+    },
+    {
+      "id": "CD-LZ-rail",
+      "src": "CD",
+      "dst": "LZ",
+      "mode": "rail",
+      "distance_km": 700.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 310000.0,
+      "cost_per_trip": 23400.0
+    },
+    {
+      "id": "LZ-CD-rail",
+      "src": "LZ",
+      "dst": "CD",
+      "mode": "rail",
+      "distance_km": 700.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 310000.0,
+      "cost_per_trip": 23400.0
+    },
+    {
+      "id": "CD-KM-rail",
+      "src": "CD",
+      "dst": "KM",
+      "mode": "rail",
+      "distance_km": 725.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 317500.0,
+      "cost_per_trip": 23950.0
+    },
+    {
+      "id": "KM-CD-rail",
+      "src": "KM",
+      "dst": "CD",
+      "mode": "rail",
+      "distance_km": 725.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 317500.0,
+      "cost_per_trip": 23950.0
+    },
+    {
+      "id": "CD-GY-rail",
+      "src": "CD",
+      "dst": "GY",
+      "mode": "rail",
+      "distance_km": 580.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 274000.0,
+      "cost_per_trip": 20760.0
+    },
+    {
+      "id": "GY-CD-rail",
+      "src": "GY",
+      "dst": "CD",
+      "mode": "rail",
+      "distance_km": 580.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 274000.0,
+      "cost_per_trip": 20760.0
+    },
+    {
+      "id": "GY-KM-rail",
+      "src": "GY",
+      "dst": "KM",
+      "mode": "rail",
+      "distance_km": 495.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 248500.0,
+      "cost_per_trip": 18890.0
+    },
+    {
+      "id": "KM-GY-rail",
+      "src": "KM",
+      "dst": "GY",
+      "mode": "rail",
+      "distance_km": 495.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 248500.0,
+      "cost_per_trip": 18890.0
+    },
+    {
+      "id": "GY-GZ-rail",
+      "src": "GY",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 890.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 367000.0,
+      "cost_per_trip": 27580.0
+    },
+    {
+      "id": "GZ-GY-rail",
+      "src": "GZ",
+      "dst": "GY",
+      "mode": "rail",
+      "distance_km": 890.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 367000.0,
+      "cost_per_trip": 27580.0
+    },
+    {
+      "id": "WH-CS-rail",
+      "src": "WH",
+      "dst": "CS",
+      "mode": "rail",
+      "distance_km": 340.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 202000.0,
+      "cost_per_trip": 15480.0
+    },
+    {
+      "id": "CS-WH-rail",
+      "src": "CS",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 340.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 202000.0,
+      "cost_per_trip": 15480.0
+    },
+    {
+      "id": "CS-GZ-rail",
+      "src": "CS",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 655.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 296500.0,
+      "cost_per_trip": 22410.0
+    },
+    {
+      "id": "GZ-CS-rail",
+      "src": "GZ",
+      "dst": "CS",
+      "mode": "rail",
+      "distance_km": 655.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 296500.0,
+      "cost_per_trip": 22410.0
+    },
+    {
+      "id": "ZZ-JN-road",
+      "src": "ZZ",
+      "dst": "JN",
+      "mode": "road",
+      "distance_km": 450.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 107500.0,
+      "cost_per_trip": 3900.0
+    },
+    {
+      "id": "JN-ZZ-road",
+      "src": "JN",
+      "dst": "ZZ",
+      "mode": "road",
+      "distance_km": 450.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 107500.0,
+      "cost_per_trip": 3900.0
+    },
+    {
+      "id": "JN-QD-road",
+      "src": "JN",
+      "dst": "QD",
+      "mode": "road",
+      "distance_km": 355.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 93250.0,
+      "cost_per_trip": 3140.0
+    },
+    {
+      "id": "QD-JN-road",
+      "src": "QD",
+      "dst": "JN",
+      "mode": "road",
+      "distance_km": 355.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 93250.0,
+      "cost_per_trip": 3140.0
+    },
+    {
+      "id": "BJ-TJ-road",
+      "src": "BJ",
+      "dst": "TJ",
+      "mode": "road",
+      "distance_km": 135.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 60250.0,
+      "cost_per_trip": 1380.0
+    },
+    {
+      "id": "TJ-BJ-road",
+      "src": "TJ",
+      "dst": "BJ",
+      "mode": "road",
+      "distance_km": 135.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 60250.0,
+      "cost_per_trip": 1380.0
+    },
+    {
+      "id": "TJ-JN-road",
+      "src": "TJ",
+      "dst": "JN",
+      "mode": "road",
+      "distance_km": 320.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 88000.0,
+      "cost_per_trip": 2860.0
+    },
+    {
+      "id": "JN-TJ-road",
+      "src": "JN",
+      "dst": "TJ",
+      "mode": "road",
+      "distance_km": 320.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 88000.0,
+      "cost_per_trip": 2860.0
+    },
+    {
+      "id": "SH-NJ-rail",
+      "src": "SH",
+      "dst": "NJ",
+      "mode": "rail",
+      "distance_km": 310.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 193000.0,
+      "cost_per_trip": 14820.0
+    },
+    {
+      "id": "NJ-SH-rail",
+      "src": "NJ",
+      "dst": "SH",
+      "mode": "rail",
+      "distance_km": 310.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 193000.0,
+      "cost_per_trip": 14820.0
+    },
+    {
+      "id": "SH-HZ-road",
+      "src": "SH",
+      "dst": "HZ",
+      "mode": "road",
+      "distance_km": 195.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 69250.0,
+      "cost_per_trip": 1860.0
+    },
+    {
+      "id": "HZ-SH-road",
+      "src": "HZ",
+      "dst": "SH",
+      "mode": "road",
+      "distance_km": 195.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 69250.0,
+      "cost_per_trip": 1860.0
+    },
+    {
+      "id": "HZ-FZ-road",
+      "src": "HZ",
+      "dst": "FZ",
+      "mode": "road",
+      "distance_km": 560.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 124000.0,
+      "cost_per_trip": 4780.0
+    },
+    {
+      "id": "FZ-HZ-road",
+      "src": "FZ",
+      "dst": "HZ",
+      "mode": "road",
+      "distance_km": 560.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 124000.0,
+      "cost_per_trip": 4780.0
+    },
+    {
+      "id": "FZ-XM-road",
+      "src": "FZ",
+      "dst": "XM",
+      "mode": "road",
+      "distance_km": 255.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 78250.0,
+      "cost_per_trip": 2340.0
+    },
+    {
+      "id": "XM-FZ-road",
+      "src": "XM",
+      "dst": "FZ",
+      "mode": "road",
+      "distance_km": 255.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 78250.0,
+      "cost_per_trip": 2340.0
+    },
+    {
+      "id": "XM-GZ-rail",
+      "src": "XM",
+      "dst": "GZ",
+      "mode": "rail",
+      "distance_km": 590.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 277000.0,
+      "cost_per_trip": 20980.0
+    },
+    {
+      "id": "GZ-XM-rail",
+      "src": "GZ",
+      "dst": "XM",
+      "mode": "rail",
+      "distance_km": 590.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 277000.0,
+      "cost_per_trip": 20980.0
+    },
+    {
+      "id": "GZ-SZ-road",
+      "src": "GZ",
+      "dst": "SZ",
+      "mode": "road",
+      "distance_km": 125.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 58750.0,
+      "cost_per_trip": 1300.0
+    },
+    {
+      "id": "SZ-GZ-road",
+      "src": "SZ",
+      "dst": "GZ",
+      "mode": "road",
+      "distance_km": 125.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 58750.0,
+      "cost_per_trip": 1300.0
+    },
+    {
+      "id": "GZ-NN-road",
+      "src": "GZ",
+      "dst": "NN",
+      "mode": "road",
+      "distance_km": 595.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 129250.0,
+      "cost_per_trip": 5060.0
+    },
+    {
+      "id": "NN-GZ-road",
+      "src": "NN",
+      "dst": "GZ",
+      "mode": "road",
+      "distance_km": 595.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 129250.0,
+      "cost_per_trip": 5060.0
+    },
+    {
+      "id": "NN-KM-rail",
+      "src": "NN",
+      "dst": "KM",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "KM-NN-rail",
+      "src": "KM",
+      "dst": "NN",
+      "mode": "rail",
+      "distance_km": 720.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 316000.0,
+      "cost_per_trip": 23840.0
+    },
+    {
+      "id": "CD-CQ-road",
+      "src": "CD",
+      "dst": "CQ",
+      "mode": "road",
+      "distance_km": 310.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 86500.0,
+      "cost_per_trip": 2780.0
+    },
+    {
+      "id": "CQ-CD-road",
+      "src": "CQ",
+      "dst": "CD",
+      "mode": "road",
+      "distance_km": 310.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 86500.0,
+      "cost_per_trip": 2780.0
+    },
+    {
+      "id": "WH-HF-rail",
+      "src": "WH",
+      "dst": "HF",
+      "mode": "rail",
+      "distance_km": 355.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 206500.0,
+      "cost_per_trip": 15810.0
+    },
+    {
+      "id": "HF-WH-rail",
+      "src": "HF",
+      "dst": "WH",
+      "mode": "rail",
+      "distance_km": 355.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 206500.0,
+      "cost_per_trip": 15810.0
+    },
+    {
+      "id": "HF-NJ-road",
+      "src": "HF",
+      "dst": "NJ",
+      "mode": "road",
+      "distance_km": 180.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 67000.0,
+      "cost_per_trip": 1740.0
+    },
+    {
+      "id": "NJ-HF-road",
+      "src": "NJ",
+      "dst": "HF",
+      "mode": "road",
+      "distance_km": 180.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 67000.0,
+      "cost_per_trip": 1740.0
+    },
+    {
+      "id": "SH-QD-road",
+      "src": "SH",
+      "dst": "QD",
+      "mode": "road",
+      "distance_km": 645.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 136750.0,
+      "cost_per_trip": 5460.0
+    },
+    {
+      "id": "QD-SH-road",
+      "src": "QD",
+      "dst": "SH",
+      "mode": "road",
+      "distance_km": 645.0,
+      "speed_kmh": 95.0,
+      "capacity_tons": 30.0,
+      "daily_capacity_tons": 600.0,
+      "fixed_cost": 136750.0,
+      "cost_per_trip": 5460.0
+    },
+    {
+      "id": "ZZ-HF-rail",
+      "src": "ZZ",
+      "dst": "HF",
+      "mode": "rail",
+      "distance_km": 535.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 260500.0,
+      "cost_per_trip": 19770.0
+    },
+    {
+      "id": "HF-ZZ-rail",
+      "src": "HF",
+      "dst": "ZZ",
+      "mode": "rail",
+      "distance_km": 535.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 260500.0,
+      "cost_per_trip": 19770.0
+    },
+    {
+      "id": "NJ-HZ-rail",
+      "src": "NJ",
+      "dst": "HZ",
+      "mode": "rail",
+      "distance_km": 270.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 181000.0,
+      "cost_per_trip": 13940.0
+    },
+    {
+      "id": "HZ-NJ-rail",
+      "src": "HZ",
+      "dst": "NJ",
+      "mode": "rail",
+      "distance_km": 270.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 181000.0,
+      "cost_per_trip": 13940.0
+    },
+    {
+      "id": "BJ-JN-rail",
+      "src": "BJ",
+      "dst": "JN",
+      "mode": "rail",
+      "distance_km": 420.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 226000.0,
+      "cost_per_trip": 17240.0
+    },
+    {
+      "id": "JN-BJ-rail",
+      "src": "JN",
+      "dst": "BJ",
+      "mode": "rail",
+      "distance_km": 420.0,
+      "speed_kmh": 78.0,
+      "capacity_tons": 1000.0,
+      "daily_capacity_tons": 2400.0,
+      "fixed_cost": 226000.0,
+      "cost_per_trip": 17240.0
+    }
+  ],
+  "od_demands": [
+    {
+      "id": "OD001",
+      "origin": "BJ",
+      "destination": "SH",
+      "demand_tons_per_day": 180
+    },
+    {
+      "id": "OD002",
+      "origin": "BJ",
+      "destination": "GZ",
+      "demand_tons_per_day": 150
+    },
+    {
+      "id": "OD003",
+      "origin": "BJ",
+      "destination": "CD",
+      "demand_tons_per_day": 120
+    },
+    {
+      "id": "OD004",
+      "origin": "BJ",
+      "destination": "WH",
+      "demand_tons_per_day": 110
+    },
+    {
+      "id": "OD005",
+      "origin": "BJ",
+      "destination": "XA",
+      "demand_tons_per_day": 90
+    },
+    {
+      "id": "OD006",
+      "origin": "BJ",
+      "destination": "SY",
+      "demand_tons_per_day": 70
+    },
+    {
+      "id": "OD007",
+      "origin": "BJ",
+      "destination": "TJ",
+      "demand_tons_per_day": 80
+    },
+    {
+      "id": "OD008",
+      "origin": "BJ",
+      "destination": "JN",
+      "demand_tons_per_day": 65
+    },
+    {
+      "id": "OD009",
+      "origin": "BJ",
+      "destination": "QD",
+      "demand_tons_per_day": 75
+    },
+    {
+      "id": "OD010",
+      "origin": "BJ",
+      "destination": "NJ",
+      "demand_tons_per_day": 85
+    },
+    {
+      "id": "OD011",
+      "origin": "BJ",
+      "destination": "HZ",
+      "demand_tons_per_day": 95
+    },
+    {
+      "id": "OD012",
+      "origin": "SH",
+      "destination": "GZ",
+      "demand_tons_per_day": 160
+    },
+    {
+      "id": "OD013",
+      "origin": "SH",
+      "destination": "CD",
+      "demand_tons_per_day": 120
+    },
+    {
+      "id": "OD014",
+      "origin": "SH",
+      "destination": "WH",
+      "demand_tons_per_day": 100
+    },
+    {
+      "id": "OD015",
+      "origin": "SH",
+      "destination": "XA",
+      "demand_tons_per_day": 85
+    },
+    {
+      "id": "OD016",
+      "origin": "SH",
+      "destination": "SY",
+      "demand_tons_per_day": 70
+    },
+    {
+      "id": "OD017",
+      "origin": "SH",
+      "destination": "NJ",
+      "demand_tons_per_day": 90
+    },
+    {
+      "id": "OD018",
+      "origin": "SH",
+      "destination": "HZ",
+      "demand_tons_per_day": 85
+    },
+    {
+      "id": "OD019",
+      "origin": "SH",
+      "destination": "FZ",
+      "demand_tons_per_day": 60
+    },
+    {
+      "id": "OD020",
+      "origin": "SH",
+      "destination": "QD",
+      "demand_tons_per_day": 65
+    },
+    {
+      "id": "OD021",
+      "origin": "SH",
+      "destination": "HF",
+      "demand_tons_per_day": 55
+    },
+    {
+      "id": "OD022",
+      "origin": "GZ",
+      "destination": "CD",
+      "demand_tons_per_day": 120
+    },
+    {
+      "id": "OD023",
+      "origin": "GZ",
+      "destination": "WH",
+      "demand_tons_per_day": 105
+    },
+    {
+      "id": "OD024",
+      "origin": "GZ",
+      "destination": "XA",
+      "demand_tons_per_day": 80
+    },
+    {
+      "id": "OD025",
+      "origin": "GZ",
+      "destination": "CS",
+      "demand_tons_per_day": 75
+    },
+    {
+      "id": "OD026",
+      "origin": "GZ",
+      "destination": "NN",
+      "demand_tons_per_day": 70
+    },
+    {
+      "id": "OD027",
+      "origin": "GZ",
+      "destination": "SZ",
+      "demand_tons_per_day": 90
+    },
+    {
+      "id": "OD028",
+      "origin": "GZ",
+      "destination": "XM",
+      "demand_tons_per_day": 60
+    },
+    {
+      "id": "OD029",
+      "origin": "GZ",
+      "destination": "KM",
+      "demand_tons_per_day": 65
+    },
+    {
+      "id": "OD030",
+      "origin": "CD",
+      "destination": "WH",
+      "demand_tons_per_day": 85
+    },
+    {
+      "id": "OD031",
+      "origin": "CD",
+      "destination": "XA",
+      "demand_tons_per_day": 95
+    },
+    {
+      "id": "OD032",
+      "origin": "CD",
+      "destination": "CQ",
+      "demand_tons_per_day": 80
+    },
+    {
+      "id": "OD033",
+      "origin": "CD",
+      "destination": "KM",
+      "demand_tons_per_day": 60
+    },
+    {
+      "id": "OD034",
+      "origin": "CD",
+      "destination": "GY",
+      "demand_tons_per_day": 55
+    },
+    {
+      "id": "OD035",
+      "origin": "CD",
+      "destination": "LZ",
+      "demand_tons_per_day": 50
+    },
+    {
+      "id": "OD036",
+      "origin": "WH",
+      "destination": "NJ",
+      "demand_tons_per_day": 60
+    },
+    {
+      "id": "OD037",
+      "origin": "WH",
+      "destination": "HF",
+      "demand_tons_per_day": 55
+    },
+    {
+      "id": "OD038",
+      "origin": "WH",
+      "destination": "CS",
+      "demand_tons_per_day": 70
+    },
+    {
+      "id": "OD039",
+      "origin": "WH",
+      "destination": "ZZ",
+      "demand_tons_per_day": 85
+    },
+    {
+      "id": "OD040",
+      "origin": "ZZ",
+      "destination": "JN",
+      "demand_tons_per_day": 55
+    },
+    {
+      "id": "OD041",
+      "origin": "ZZ",
+      "destination": "XA",
+      "demand_tons_per_day": 75
+    },
+    {
+      "id": "OD042",
+      "origin": "ZZ",
+      "destination": "QD",
+      "demand_tons_per_day": 50
+    },
+    {
+      "id": "OD043",
+      "origin": "XA",
+      "destination": "LZ",
+      "demand_tons_per_day": 50
+    },
+    {
+      "id": "OD044",
+      "origin": "XA",
+      "destination": "UQ",
+      "demand_tons_per_day": 40
+    },
+    {
+      "id": "OD045",
+      "origin": "LZ",
+      "destination": "UQ",
+      "demand_tons_per_day": 45
+    },
+    {
+      "id": "OD046",
+      "origin": "SY",
+      "destination": "CS",
+      "demand_tons_per_day": 35
+    },
+    {
+      "id": "OD047",
+      "origin": "SZ",
+      "destination": "SH",
+      "demand_tons_per_day": 70
+    },
+    {
+      "id": "OD048",
+      "origin": "FZ",
+      "destination": "HZ",
+      "demand_tons_per_day": 45
+    },
+    {
+      "id": "OD049",
+      "origin": "NN",
+      "destination": "KM",
+      "demand_tons_per_day": 40
+    },
+    {
+      "id": "OD050",
+      "origin": "TJ",
+      "destination": "QD",
+      "demand_tons_per_day": 45
+    },
+    {
+      "id": "OD051",
+      "origin": "HF",
+      "destination": "FZ",
+      "demand_tons_per_day": 35
+    },
+    {
+      "id": "OD052",
+      "origin": "JN",
+      "destination": "HZ",
+      "demand_tons_per_day": 45
+    }
+  ]
+}
